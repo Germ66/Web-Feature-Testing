@@ -1,0 +1,22 @@
+h1 {
+    background-color: yellow;
+    color: black;
+    font-size: 60px;
+}
+
+div h1 {
+    background-color: green;
+    color: chocolate;
+}
+
+.headerstyle {
+    background-color: aqua;
+}
+
+@media (max-width: 700px)
+{
+    h1 {
+        font-size: 30px;
+        background-color: burlywood;
+    }
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: "Montserrat", sans-serif;
+    margin:0; /* remove all body margins */
+    font-size: 120%;
+}
+header {
+    display: flex;
+    align-items: center;
+    background: hsl(168, 88%, 40%);
+}
+header h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 200%;
+    font-weight: lighter;
+    color: black;
+}
+nav {
+    background-color: #0a85d8;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    display: flex; /* Display the children of this element as flexible boxes */
+}
+nav p {
+    text-align: center;
+    flex-basis: 100px; /* Give each paragraph the same basic width */
+    flex-grow: 1; /* Allow each paragraph to grow evenly to fill up the parent nav element */
+    align-items: center; /* Align child flexible boxes in the vertical center */
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold
+}
+nav a:hover{
+    color:red;
+}
+footer {
+    background-color: #0a85d8; /*background or background-color both work */
+    position: fixed; /* fix to the viewport */
+    bottom: 0;  /* Start 0 pixels from the bottom of the viewport */
+    left: 0;/* Start 0 pixels from the left of viewport */
+    width: 100%; /* Set the width to 100% of the viewport */
+    height: 3em; /* Set the footer elements height to 3 times larger than its current font size */
+    border-top: solid black 1px; /* Have to put the unit, e.g. px or %, if not zero */
+}
+h1, h2 {
+    color:#f75c03;
+    font-family: 'McLaren', cursive;
+}
+.main {
+ margin-left:1em;
+ margin-right:1em;
+ margin-bottom:4em; /*Larger margin to allow for the footer */
+}
+.center {
+    text-align: center;
+}
+.wrap {
+   float: right;
+}
+
+/*CSS for contactpage
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
