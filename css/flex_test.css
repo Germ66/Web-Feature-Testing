@@ -1,0 +1,19 @@
+.item:hover {
+    transform: translate(-6px);
+}
+h1 {
+    color:blue;
+}
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-color: brown;
+    height: 200px;
+
+}
+.flex_container_item {
+    border-style: solid;
+    align-content: right;
+}

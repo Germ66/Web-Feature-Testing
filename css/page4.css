@@ -1,0 +1,13 @@
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+nav a:hover{
+    color:gold;
+    box-shadow: 0 0 15px #0ff, 0 0 40px #0ff;
+}
+
