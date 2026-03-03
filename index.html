@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Digitial Media. Creating websites</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bounce.css">
+        <link rel="stylesheet" href="css/hover.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- Google Translate: Add this code snippet provided by Google -->
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',  // Original language of your website
+                    includedLanguages: 'es,fr,de',  // Languages available for translation
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE  // Choose layout
+                }, 'google_translate_element');
+            }
+        </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <script>
+        $(document).ready(function(){
+            $("#jQueryHide").click(function(){
+                $("#grid-container").hide();
+            });
+        });
+        $(document).ready(function(){
+            $("#jQueryShow").click(function(){
+                $("#grid-container").fadeIn(3000);
+            });
+        });
+        // $(document).ready(function(){
+        //     $("p").mouseover(function(){
+        //         // $(this).css("font-size", "24px");
+        //         $(this).toggleClass("large-text");
+        //     });
+        // });
+        $(document).ready(function(){
+            $("p").hover(
+                function() {
+                    $(this).addClass("large-text");
+                },
+                function() {
+                    $(this).removeClass("large-text");
+                }
+            );
+        });
+        </script>
+        <style>
+            .large-text {
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!-- Top of each page --> 
+            <figure>
+                <img class="rotate" src="images/notebook.png" width="100">
+            </figure> 
+            <h1> Digital Media. Creating Websites</h1>
+        </header>
+        <nav>
+            <!-- Site wide navigation bar -->
+            <p><a href="index.html">Home</a></p>
+            <p><a href="page2.html">Structure and Presentation</a></p>
+            <p><a href="page3.html">Flex Box Test</a></p> 
+            <p><a href="page4.html">Swiper</a></p> 
+            <!-- The next two navigation links, respond to hiding and showing my grid display grid-container. -->
+            <p><a id="jQueryHide">Hide</a></p> 
+            <p><a id="jQueryShow">Show</a></p> 
+        </nav>
+        <main role="main" class="main">
+            <h1>Post Card</h1>
+                <!-- Google Translate Language Switcher -->
+                <div id="google_translate_element"></div>
+                <!--main page content-->
+                <h1 class="bounce" id="test">Subscribe here</h1>
+                <p>Welcome to this web site demonstration.</p>
+
+                <p>This site will be used to demonstrate how to look behind the scenes on an existing</p>
+                <p>web site to see how it is built and will serve as an example for a site you will create.</p>
+                <p>But first, what is a web site and what is digital media?</p>
+
+                <h1>What is digital media?</h1><!-- this is the main heading-->
+                <div class="grid-container" id="grid-container">
+                    <div class="grid-item">
+                        <img src="images/NZ_Image.JPG" alt="Image 1">
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/CathedralCove.jpg" alt="Image 2">
+                    </div>
+                    <div class="grid-item">   
+                        <img src="images/HaheiAir.jpg" alt="Image 3">
+                    </div>
+                </div>
+                According to <a href="https://en.wikipedia.org/wiki/Digital_media" target="_blank">Wikipedia</a>  digital media are any media 
+                that can be created, viewed, changed, stored and shared on digital devices. 
+                Digital media is typically accessed using an App or website.
+
+                <figure>
+                    <img class src="https://media-exp1.licdn.com/dms/image/C5612AQHaURxy9FMDeQ/article-cover_image-shrink_720_1280/0/1528879317711?e=2147483647&v=beta&t=K6C8j_5LzDsCswVMUpqFAkaRWIfeqTZ5plbiVujL4kE" width="500">
+                    <figcaption>Image © Malta Information Technology Agency.</figcaption>
+                </figure>
+                <h1></h1>
+                <h2> Ok... So what is media?</h2><!-- this is the sub heading-->
+
+                <p>Media includes a lot of things but are usually images, text, audio, video and databases. 
+                When combined together this means media includes animations, movies, web series, TV, radio, games, books, podcasts, 
+                news articles, websites, instruction manuals and more.</p>
+
+                <p>Media is basically everything we create, change, share, view and store. Digital media is everything we create, 
+                change, share, view and store using an App or website.</p>
+
+                <h1> What is a website?</h1>
+
+                <p>A web site is a collection of web pages linked to a single name, such as google.com, or learncoach.com. 
+                This name is called a Domain Name and you can get one for each of your own web sites, usually for a small annual price.</p>
+
+                <p>A web page is what you are viewing right now. 
+                A single digital media page designed to be viewed in an app called a web browser.</p>
+        </main>
+        <!-- this will eventually become a footer-->
+        <footer>
+            <p class="center">&copy; 2026 Ormiston College Testing.</p>            
+        </footer>   
+    </body>
+</html>
